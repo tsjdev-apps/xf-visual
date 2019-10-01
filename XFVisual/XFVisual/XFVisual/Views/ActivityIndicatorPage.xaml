@@ -13,7 +13,7 @@
                 <Label Text="Default" />
                 <ActivityIndicator IsRunning="True" />
 
-                <Label Text="Default Material" />
+                <Label Text="Default (Material)" />
                 <ActivityIndicator IsRunning="True"
                                Visual="Material" />
 
@@ -21,7 +21,7 @@
                 <ActivityIndicator Color="{StaticResource PrimaryColor}"
                                IsRunning="True" />
 
-                <Label Text="Color Material" />
+                <Label Text="Color (Material)" />
                 <ActivityIndicator Color="{StaticResource PrimaryColor}"
                                IsRunning="True"
                                Visual="Material" />
