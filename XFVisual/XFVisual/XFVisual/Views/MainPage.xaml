@@ -21,6 +21,9 @@
                 <Button Text="CheckBoxes"
                         Command="{Binding NavigateCommand}"
                         CommandParameter="{x:Type views:CheckBoxPage}" />
+                <Button Text="Editors"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{x:Type views:EditorPage}" />
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
