@@ -33,6 +33,9 @@
                 <Button Text="Sliders"
                         Command="{Binding NavigateCommand}"
                         CommandParameter="{x:Type views:SliderPage}" />
+                <Button Text="Steppers"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{x:Type views:StepperPage}" />
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
