@@ -8,8 +8,10 @@
 
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="PrimaryColor">#E20074</Color>
+            <Color x:Key="PrimaryColor">#ce93d8</Color>
+            <Color x:Key="PrimaryTextColor">#ce93d8</Color>
             
+
             <Style TargetType="StackLayout">
                 <Setter Property="Spacing"
                         Value="24"/>
@@ -25,6 +27,12 @@
                 <Setter Property="FontSize"
                         Value="Medium"/>
             </Style>
+
+            <Style TargetType="Button">
+                <Setter Property="HorizontalOptions"
+                        Value="FillAndExpand" />
+            </Style>
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>
