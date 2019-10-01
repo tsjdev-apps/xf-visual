@@ -24,6 +24,9 @@
                 <Button Text="Editors"
                         Command="{Binding NavigateCommand}"
                         CommandParameter="{x:Type views:EditorPage}" />
+                <Button Text="Entries"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{x:Type views:EntryPage}" />
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
