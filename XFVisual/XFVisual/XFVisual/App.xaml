@@ -9,6 +9,7 @@
     <Application.Resources>
         <ResourceDictionary>
             <Color x:Key="PrimaryColor">#ce93d8</Color>
+            <Color x:Key="SecondaryColor">#9c64a6</Color>
             <Color x:Key="PrimaryTextColor">#ce93d8</Color>
             
 
@@ -24,8 +25,6 @@
             <Style TargetType="Label">
                 <Setter Property="Margin"
                         Value="0,0,0,-10"/>
-                <Setter Property="FontSize"
-                        Value="Medium"/>
             </Style>
 
             <Style TargetType="Button">
