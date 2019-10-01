@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Sliders"
+             x:Class="XFVisual.Views.SliderPage">
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Default" />
+                <Slider Minimum="-100"
+                        Maximum="100" />
+
+                <Label Text="Default (Material)" />
+                <Slider Minimum="-100"
+                        Maximum="100"
+                        Visual="Material" />
+
+                <Label Text="Disabled" />
+                <Slider Minimum="-100"
+                        Maximum="100"
+                        IsEnabled="false" />
+
+                <Label Text="Disabled (Material)" />
+                <Slider Minimum="-100"
+                        Maximum="100"
+                        IsEnabled="false"
+                        Visual="Material" />
+
+                <Label Text="ThumbColor, MinimumTrackColor" />
+                <Slider Minimum="-100"
+                        Maximum="100"
+                        ThumbColor="{StaticResource PrimaryColor}"
+                        MinimumTrackColor="{StaticResource PrimaryColor}" />
+
+                <Label Text="ThumbColor, MinimumTrackColor (Material)" />
+                <Slider Minimum="-100"
+                        Maximum="100"
+                        ThumbColor="{StaticResource PrimaryColor}"
+                        MinimumTrackColor="{StaticResource PrimaryColor}"
+                        Visual="Material" />
+
+                <Label Text="ThumbColor, Min- and MaximumTrackColor" />
+                <Slider Minimum="-100"
+                        Maximum="100"
+                        ThumbColor="{StaticResource PrimaryColor}"
+                        MinimumTrackColor="{StaticResource PrimaryColor}"
+                        MaximumTrackColor="{StaticResource SecondaryColor}" />
+
+                <Label Text="ThumbColor, Min- and MaximumTrackColor (Material)" />
+                <Slider Minimum="-100"
+                        Maximum="100"
+                        ThumbColor="{StaticResource PrimaryColor}"
+                        MinimumTrackColor="{StaticResource PrimaryColor}"
+                        MaximumTrackColor="{StaticResource SecondaryColor}"
+                        Visual="Material" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+    
+</ContentPage>
