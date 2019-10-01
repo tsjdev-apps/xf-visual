@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Steppers"
+             x:Class="XFVisual.Views.StepperPage">
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Default" />
+                <Stepper />
+
+                <Label Text="Default (Material)" />
+                <Stepper Visual="Material" />
+
+                <Label Text="Disabled" />
+                <Stepper IsEnabled="False" />
+
+                <Label Text="Disabled (Material)" />
+                <Stepper IsEnabled="False"
+                         Visual="Material" />
+
+                <Label Text="Width" />
+                <Stepper WidthRequest="100"
+                         HorizontalOptions="Center" />
+
+                <Label Text="Width (Material)" />
+                <Stepper WidthRequest="100"
+                         HorizontalOptions="Center"
+                         Visual="Material" />
+
+
+                <Label Text="Height" />
+                <Stepper HeightRequest="100" />
+
+                <Label Text="Height (Material)" />
+                <Stepper HeightRequest="100"
+                         Visual="Material" />
+
+                <Label Text="Width and Height" />
+                <Stepper HeightRequest="100"
+                         WidthRequest="100"
+                         HorizontalOptions="Center" />
+
+                <Label Text="Width and Height (Material)" />
+                <Stepper HeightRequest="100"
+                         WidthRequest="100"
+                         HorizontalOptions="Center"
+                         Visual="Material" />
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+    
+</ContentPage>
