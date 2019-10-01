@@ -15,6 +15,9 @@
                 <Button Text="Activity Indicators"
                         Command="{Binding NavigateCommand}"
                         CommandParameter="{x:Type views:ActivityIndicatorPage}"/>
+                <Button Text="Buttons"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{x:Type views:ButtonPage}" />
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
