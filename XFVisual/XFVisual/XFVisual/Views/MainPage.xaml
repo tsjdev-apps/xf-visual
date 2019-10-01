@@ -27,6 +27,9 @@
                 <Button Text="Entries"
                         Command="{Binding NavigateCommand}"
                         CommandParameter="{x:Type views:EntryPage}" />
+                <Button Text="Pickers"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{x:Type views:PickerPage}" />
                 <Button Text="ProgressBars"
                         Command="{Binding NavigateCommand}"
                         CommandParameter="{x:Type views:ProgressBarPage}" />
