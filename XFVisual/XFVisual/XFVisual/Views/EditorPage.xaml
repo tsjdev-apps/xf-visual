@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              Title="Editors"
              x:Class="XFVisual.Views.EditorPage">
-    
+
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
@@ -17,7 +17,7 @@
                 <Label Text="Default (Material)" />
                 <Editor AutoSize="TextChanges"
                         Placeholder="Enter notes here"
-                        Visual="Material"/>
+                        Visual="Material" />
 
                 <Label Text="Disabled" />
                 <Editor AutoSize="TextChanges"
@@ -44,5 +44,5 @@
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
-    
+
 </ContentPage>
