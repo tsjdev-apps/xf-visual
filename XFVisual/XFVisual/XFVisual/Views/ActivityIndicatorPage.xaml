@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Activity Indicators"
+             x:Class="XFVisual.Views.ActivityIndicatorPage">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Default" />
+                <ActivityIndicator IsRunning="True" />
+
+                <Label Text="Default Material" />
+                <ActivityIndicator IsRunning="True"
+                               Visual="Material" />
+
+                <Label Text="Color" />
+                <ActivityIndicator Color="{StaticResource PrimaryColor}"
+                               IsRunning="True" />
+
+                <Label Text="Color Material" />
+                <ActivityIndicator Color="{StaticResource PrimaryColor}"
+                               IsRunning="True"
+                               Visual="Material" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>
