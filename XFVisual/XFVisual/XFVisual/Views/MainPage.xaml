@@ -30,6 +30,9 @@
                 <Button Text="ProgressBars"
                         Command="{Binding NavigateCommand}"
                         CommandParameter="{x:Type views:ProgressBarPage}" />
+                <Button Text="Sliders"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{x:Type views:SliderPage}" />
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
