@@ -1,32 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             Title="Activity Indicators"
-             x:Class="XFVisual.Views.ActivityIndicatorPage">
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:markupextensions="clr-namespace:XFVisual.MarkupExtensions"
+            mc:Ignorable="d"
+            Title="Activity Indicators"
+            x:Class="XFVisual.Views.ActivityIndicatorPage">
 
-    <ContentPage.Content>
-        <ScrollView>
-            <StackLayout>
-                <Label Text="Default" />
-                <ActivityIndicator IsRunning="True" />
+    <ContentPage Title="Default"
+                 IconImageSource="{markupextensions:ImageResource XFVisual.Assets.default.png}">
+        <ContentPage.Content>
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Default" />
+                    <ActivityIndicator IsRunning="True" />
 
-                <Label Text="Default (Material)" />
-                <ActivityIndicator IsRunning="True"
-                               Visual="Material" />
+                    <Label Text="Color" />
+                    <ActivityIndicator Color="{StaticResource PrimaryColor}"
+                                       IsRunning="True" />
+                </StackLayout>
+            </ScrollView>
+        </ContentPage.Content>
+    </ContentPage>
 
-                <Label Text="Color" />
-                <ActivityIndicator Color="{StaticResource PrimaryColor}"
-                               IsRunning="True" />
+    <ContentPage Title="Material"
+                 IconImageSource="{markupextensions:ImageResource XFVisual.Assets.material.png}"
+                 Visual="Material">
+        <ContentPage.Content>
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Default (Material)" />
+                    <ActivityIndicator IsRunning="True" />
 
-                <Label Text="Color (Material)" />
-                <ActivityIndicator Color="{StaticResource PrimaryColor}"
-                               IsRunning="True"
-                               Visual="Material" />
-            </StackLayout>
-        </ScrollView>
-    </ContentPage.Content>
+                    <Label Text="Color (Material)" />
+                    <ActivityIndicator Color="{StaticResource PrimaryColor}"
+                                       IsRunning="True" />
+                </StackLayout>
+            </ScrollView>
+        </ContentPage.Content>
+    </ContentPage>
 
-</ContentPage>
+</TabbedPage>
