@@ -67,8 +67,7 @@
             <ScrollView>
                 <StackLayout>
                     <Label Text="Picker (Material)" />
-                    <Picker Title="Select an item"
-                            Visual="Material">
+                    <Picker Title="Select an item">
                         <Picker.ItemsSource>
                             <x:Array Type="{x:Type x:String}">
                                 <x:String>Item 1</x:String>
@@ -83,8 +82,7 @@
                     <Label Text="Picker with Text- and TitleColor (Material)" />
                     <Picker Title="Select an item"
                             TextColor="{StaticResource PrimaryTextColor}"
-                            TitleColor="{StaticResource SecondaryTextColor}"
-                            Visual="Material">
+                            TitleColor="{StaticResource SecondaryTextColor}">
                         <Picker.ItemsSource>
                             <x:Array Type="{x:Type x:String}">
                                 <x:String>Item 1</x:String>
@@ -98,21 +96,18 @@
 
                     <Label Text="DatePicker (Material)" />
                     <DatePicker MinimumDate="01/01/2020"
-                                MaximumDate="12/31/2020"
-                                Visual="Material" />
+                                MaximumDate="12/31/2020" />
 
                     <Label Text="DatePicker with TextColor (Material)" />
                     <DatePicker MinimumDate="01/01/2020"
                                 MaximumDate="12/31/2020"
-                                TextColor="{StaticResource PrimaryColor}"
-                                Visual="Material" />
+                                TextColor="{StaticResource PrimaryColor}" />
 
                     <Label Text="TimePicker (Material)" />
-                    <TimePicker Visual="Material" />
+                    <TimePicker />
 
                     <Label Text="TimePicker with TextColor (Material)" />
-                    <TimePicker TextColor="{StaticResource PrimaryColor}"
-                                Visual="Material" />
+                    <TimePicker TextColor="{StaticResource PrimaryColor}" />
 
                 </StackLayout>
             </ScrollView>

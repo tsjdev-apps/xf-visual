@@ -39,23 +39,19 @@
             <ScrollView>
                 <StackLayout>
                     <Label Text="Default (Material)" />
-                    <Entry Placeholder="Enter short note here"
-                           Visual="Material" />
+                    <Entry Placeholder="Enter short note here" />
 
                     <Label Text="Disabled (Material)" />
                     <Entry Placeholder="Enter short note here"
-                           IsEnabled="False"
-                           Visual="Material" />
+                           IsEnabled="False" />
 
                     <Label Text="PlaceholderColor (Material)" />
                     <Entry Placeholder="Enter short note here"
-                           PlaceholderColor="{StaticResource PrimaryTextColor}"
-                           Visual="Material" />
+                           PlaceholderColor="{StaticResource PrimaryTextColor}" />
 
                     <Label Text="TextColor (Material)" />
                     <Entry Placeholder="Enter short note here"
-                           TextColor="{StaticResource PrimaryTextColor}"
-                           Visual="Material" />
+                           TextColor="{StaticResource PrimaryTextColor}" />
                 </StackLayout>
             </ScrollView>
         </ContentPage.Content>

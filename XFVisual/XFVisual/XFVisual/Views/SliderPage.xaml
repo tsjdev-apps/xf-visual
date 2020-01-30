@@ -48,29 +48,25 @@
                 <StackLayout>
                     <Label Text="Default (Material)" />
                     <Slider Minimum="-100"
-                            Maximum="100"
-                            Visual="Material" />
+                            Maximum="100" />
 
                     <Label Text="Disabled (Material)" />
                     <Slider Minimum="-100"
                             Maximum="100"
-                            IsEnabled="false"
-                            Visual="Material" />
+                            IsEnabled="false" />
 
                     <Label Text="ThumbColor, MinimumTrackColor (Material)" />
                     <Slider Minimum="-100"
                             Maximum="100"
                             ThumbColor="{StaticResource PrimaryColor}"
-                            MinimumTrackColor="{StaticResource PrimaryColor}"
-                            Visual="Material" />
+                            MinimumTrackColor="{StaticResource PrimaryColor}" />
 
                     <Label Text="ThumbColor, Min- and MaximumTrackColor (Material)" />
                     <Slider Minimum="-100"
                             Maximum="100"
                             ThumbColor="{StaticResource PrimaryColor}"
                             MinimumTrackColor="{StaticResource PrimaryColor}"
-                            MaximumTrackColor="{StaticResource SecondaryColor}"
-                            Visual="Material" />
+                            MaximumTrackColor="{StaticResource SecondaryColor}" />
                 </StackLayout>
             </ScrollView>
         </ContentPage.Content>

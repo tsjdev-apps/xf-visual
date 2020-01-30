@@ -39,20 +39,17 @@
                 <StackLayout>
                     <Label Text="Default (Material)" />
                     <Editor AutoSize="TextChanges"
-                            Placeholder="Enter notes here"
-                            Visual="Material" />
+                            Placeholder="Enter notes here" />
 
                     <Label Text="Disabled (Material)" />
                     <Editor AutoSize="TextChanges"
                             Placeholder="Enter notes here"
-                            IsEnabled="False"
-                            Visual="Material" />
+                            IsEnabled="False" />
 
                     <Label Text="PlaceholderColor (Material)" />
                     <Editor AutoSize="TextChanges"
                             Placeholder="Enter notes here"
-                            PlaceholderColor="{StaticResource PrimaryTextColor}"
-                            Visual="Material" />
+                            PlaceholderColor="{StaticResource PrimaryTextColor}" />
 
                 </StackLayout>
             </ScrollView>

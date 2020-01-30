@@ -42,26 +42,22 @@
             <ScrollView>
                 <StackLayout>
                     <Label Text="Default (Material)" />
-                    <Stepper Visual="Material" />
+                    <Stepper />
 
                     <Label Text="Disabled (Material)" />
-                    <Stepper IsEnabled="False"
-                             Visual="Material" />
+                    <Stepper IsEnabled="False" />
 
                     <Label Text="Width (Material)" />
                     <Stepper WidthRequest="100"
-                             HorizontalOptions="Center"
-                             Visual="Material" />
+                             HorizontalOptions="Center" />
 
                     <Label Text="Height (Material)" />
-                    <Stepper HeightRequest="100"
-                             Visual="Material" />
+                    <Stepper HeightRequest="100" />
 
                     <Label Text="Width and Height (Material)" />
                     <Stepper HeightRequest="100"
                              WidthRequest="100"
-                             HorizontalOptions="Center"
-                             Visual="Material" />
+                             HorizontalOptions="Center" />
                 </StackLayout>
             </ScrollView>
         </ContentPage.Content>
