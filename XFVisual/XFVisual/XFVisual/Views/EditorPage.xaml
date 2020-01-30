@@ -1,12 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
+            xmlns:markupextensions="clr-namespace:XFVisual.MarkupExtensions"
+            mc:Ignorable="d"
              Title="Editors"
              x:Class="XFVisual.Views.EditorPage">
 
+    <ContentPage Title="Default"
+                 IconImageSource="{markupextensions:ImageResource XFVisual.Assets.default.png}">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
@@ -14,35 +17,46 @@
                 <Editor AutoSize="TextChanges"
                         Placeholder="Enter notes here" />
 
-                <Label Text="Default (Material)" />
-                <Editor AutoSize="TextChanges"
-                        Placeholder="Enter notes here"
-                        Visual="Material" />
-
                 <Label Text="Disabled" />
                 <Editor AutoSize="TextChanges"
                         Placeholder="Enter notes here"
                         IsEnabled="False" />
 
-                <Label Text="Disabled (Material)" />
-                <Editor AutoSize="TextChanges"
-                        Placeholder="Enter notes here"
-                        IsEnabled="False"
-                        Visual="Material" />
-
                 <Label Text="PlaceholderColor" />
                 <Editor AutoSize="TextChanges"
                         Placeholder="Enter notes here"
                         PlaceholderColor="{StaticResource PrimaryTextColor}" />
-
-                <Label Text="PlaceholderColor (Material)" />
-                <Editor AutoSize="TextChanges"
-                        Placeholder="Enter notes here"
-                        PlaceholderColor="{StaticResource PrimaryTextColor}"
-                        Visual="Material" />
-
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
+    </ContentPage>
 
-</ContentPage>
+    <ContentPage Title="Material"
+                 IconImageSource="{markupextensions:ImageResource XFVisual.Assets.material.png}"
+                 Visual="Material">
+        <ContentPage.Content>
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Default (Material)" />
+                    <Editor AutoSize="TextChanges"
+                            Placeholder="Enter notes here"
+                            Visual="Material" />
+
+                    <Label Text="Disabled (Material)" />
+                    <Editor AutoSize="TextChanges"
+                            Placeholder="Enter notes here"
+                            IsEnabled="False"
+                            Visual="Material" />
+
+                    <Label Text="PlaceholderColor (Material)" />
+                    <Editor AutoSize="TextChanges"
+                            Placeholder="Enter notes here"
+                            PlaceholderColor="{StaticResource PrimaryTextColor}"
+                            Visual="Material" />
+
+                </StackLayout>
+            </ScrollView>
+        </ContentPage.Content>
+    </ContentPage>
+
+</TabbedPage>
