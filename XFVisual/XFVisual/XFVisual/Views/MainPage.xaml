@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:views="clr-namespace:XFVisual.Views"
+             mc:Ignorable="d"
+             Title="Visual Demos"
+             Visual="Material"
+             x:Class="XFVisual.Views.MainPage">
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Button Text="Activity Indicators"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{x:Type views:ActivityIndicatorPage}"/>
+                <Button Text="Buttons"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{x:Type views:ButtonPage}" />
+                <Button Text="Cards"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{x:Type views:CardPage}" />
+                <Button Text="CheckBoxes"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{x:Type views:CheckBoxPage}" />
+                <Button Text="Editors"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{x:Type views:EditorPage}" />
+                <Button Text="Entries"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{x:Type views:EntryPage}" />
+                <Button Text="Pickers"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{x:Type views:PickerPage}" />
+                <Button Text="ProgressBars"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{x:Type views:ProgressBarPage}" />
+                <Button Text="Sliders"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{x:Type views:SliderPage}" />
+                <Button Text="Steppers"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{x:Type views:StepperPage}" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+    
+</ContentPage>

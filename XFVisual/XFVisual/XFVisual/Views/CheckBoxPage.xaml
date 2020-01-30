@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:markupextensions="clr-namespace:XFVisual.MarkupExtensions"
+            mc:Ignorable="d"
+            Title="CheckBoxes"
+            x:Class="XFVisual.Views.CheckBoxPage">
+
+    <ContentPage Title="Default"
+                 IconImageSource="{markupextensions:ImageResource XFVisual.Assets.default.png}">
+        <ContentPage.Content>
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Default" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <CheckBox Grid.Column="0" />
+                        <CheckBox IsChecked="True"
+                                  Grid.Column="1" />
+                    </Grid>
+
+                    <Label Text="Disabled" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <CheckBox IsEnabled="False"
+                                  Grid.Column="0" />
+                        <CheckBox IsEnabled="False"
+                                  IsChecked="True"
+                                  Grid.Column="1" />
+                    </Grid>
+
+                    <Label Text="Color" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <CheckBox Color="{StaticResource PrimaryColor}"
+                                  Grid.Column="0" />
+                        <CheckBox Color="{StaticResource PrimaryColor}"
+                                  IsChecked="True"
+                                  Grid.Column="1" />
+                    </Grid>
+
+                    <Label Text="Color Disabled" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <CheckBox Color="{StaticResource PrimaryColor}"
+                                  IsEnabled="False"
+                                  Grid.Column="0" />
+                        <CheckBox Color="{StaticResource PrimaryColor}"
+                                  IsEnabled="False"
+                                  IsChecked="True"
+                                  Grid.Column="1" />
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="Material"
+                 IconImageSource="{markupextensions:ImageResource XFVisual.Assets.material.png}"
+                 Visual="Material">
+        <ContentPage.Content>
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Default (Material)" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <CheckBox Grid.Column="0" />
+                        <CheckBox IsChecked="True"
+                                  Grid.Column="1" />
+                    </Grid>
+
+                    <Label Text="Disabled (Material)" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <CheckBox IsEnabled="False"
+                                  Grid.Column="0" />
+                        <CheckBox IsEnabled="False"
+                                  IsChecked="True"
+                                  Grid.Column="1" />
+                    </Grid>
+
+                    <Label Text="Color (Material)" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <CheckBox Color="{StaticResource PrimaryColor}"
+                                  Grid.Column="0" />
+                        <CheckBox Color="{StaticResource PrimaryColor}"
+                                  IsChecked="True"
+                                  Grid.Column="1" />
+                    </Grid>
+
+                    <Label Text="Color Disabled (Material)" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <CheckBox Color="{StaticResource PrimaryColor}"
+                                  IsEnabled="False"
+                                  Grid.Column="0" />
+                        <CheckBox Color="{StaticResource PrimaryColor}"
+                                  IsEnabled="False"
+                                  IsChecked="True"
+                                  Grid.Column="1" />
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+
+        </ContentPage.Content>
+    </ContentPage>
+
+</TabbedPage>
