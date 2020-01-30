@@ -18,6 +18,9 @@
                 <Button Text="Buttons"
                         Command="{Binding NavigateCommand}"
                         CommandParameter="{x:Type views:ButtonPage}" />
+                <Button Text="Cards"
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="{x:Type views:CardPage}" />
                 <Button Text="CheckBoxes"
                         Command="{Binding NavigateCommand}"
                         CommandParameter="{x:Type views:CheckBoxPage}" />
