@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:markupextensions="clr-namespace:XFVisual.MarkupExtensions"
+            mc:Ignorable="d"
+            Title="Cards"
+            x:Class="XFVisual.Views.CardPage">
+
+    <ContentPage Title="Default"
+                 IconImageSource="{markupextensions:ImageResource XFVisual.Assets.default.png}">
+        <ContentPage.Content>
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Default" />
+                    <Frame Padding="16">
+                        <StackLayout>
+                            <Image Source="{markupextensions:ImageResource XFVisual.Assets.card-background.png}"
+                                   Margin="-16,-16,-16,0"
+                                   Aspect="AspectFill" />
+                            <Label Text="Lorem Impsum"
+                                   FontSize="24"
+                                   TextColor="{StaticResource PrimaryTextColor}" />
+                            <Label Text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                                   TextColor="{StaticResource SecondaryTextColor}"
+                                   FontSize="14" />
+                            <Button Text="more"
+                                    HorizontalOptions="End" />
+                        </StackLayout>
+                    </Frame>
+
+                    <Label Text="No Shadow" />
+                    <Frame Padding="16"
+                           HasShadow="False">
+                        <StackLayout>
+                            <Image Source="{markupextensions:ImageResource XFVisual.Assets.card-background.png}"
+                                   Margin="-16,-16,-16,0"
+                                   Aspect="AspectFill" />
+                            <Label Text="Lorem Impsum"
+                                   FontSize="24"
+                                   TextColor="{StaticResource PrimaryTextColor}" />
+                            <Label Text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                                   TextColor="{StaticResource SecondaryTextColor}"
+                                   FontSize="14" />
+                            <Button Text="more"
+                                    HorizontalOptions="End" />
+                        </StackLayout>
+                    </Frame>
+
+                    <Label Text="BorderColor" />
+                    <Frame Padding="16"
+                           BorderColor="{StaticResource PrimaryColor}">
+                        <StackLayout>
+                            <Image Source="{markupextensions:ImageResource XFVisual.Assets.card-background.png}"
+                                   Margin="-16,-16,-16,0"
+                                   Aspect="AspectFill" />
+                            <Label Text="Lorem Impsum"
+                                   FontSize="24"
+                                   TextColor="{StaticResource PrimaryTextColor}" />
+                            <Label Text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                                   TextColor="{StaticResource SecondaryTextColor}"
+                                   FontSize="14" />
+                            <Button Text="more"
+                                    HorizontalOptions="End" />
+                        </StackLayout>
+                    </Frame>
+
+                    <Label Text="BorderColor + No Shadow" />
+                    <Frame Padding="16"
+                           BorderColor="{StaticResource PrimaryColor}"
+                           HasShadow="False">
+                        <StackLayout>
+                            <Image Source="{markupextensions:ImageResource XFVisual.Assets.card-background.png}"
+                                   Margin="-16,-16,-16,0"
+                                   Aspect="AspectFill" />
+                            <Label Text="Lorem Impsum"
+                                   FontSize="24"
+                                   TextColor="{StaticResource PrimaryTextColor}" />
+                            <Label Text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                                   TextColor="{StaticResource SecondaryTextColor}"
+                                   FontSize="14" />
+                            <Button Text="more"
+                                    HorizontalOptions="End" />
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="Material"
+                 IconImageSource="{markupextensions:ImageResource XFVisual.Assets.material.png}"
+                 Visual="Material">
+        <ContentPage.Content>
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Default (Material)" />
+                    <Frame Padding="16">
+                        <StackLayout Spacing="16">
+                            <Image Source="{markupextensions:ImageResource XFVisual.Assets.card-background.png}"
+                                   Margin="-16,-16,-16,0"
+                                   Aspect="AspectFill" />
+                            <Label Text="Lorem Impsum"
+                                   FontSize="24"
+                                   TextColor="{StaticResource PrimaryTextColor}" />
+                            <Label Text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                                   TextColor="{StaticResource SecondaryTextColor}"
+                                   FontSize="14" />
+                            <Button Text="more"
+                                    HorizontalOptions="End" />
+                        </StackLayout>
+                    </Frame>
+
+                    <Label Text="No Shadow (Material)" />
+                    <Frame Padding="16"
+                           HasShadow="False">
+                        <StackLayout>
+                            <Image Source="{markupextensions:ImageResource XFVisual.Assets.card-background.png}"
+                                   Margin="-16,-16,-16,0"
+                                   Aspect="AspectFill" />
+                            <Label Text="Lorem Impsum"
+                                   FontSize="24"
+                                   TextColor="{StaticResource PrimaryTextColor}" />
+                            <Label Text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                                   TextColor="{StaticResource SecondaryTextColor}"
+                                   FontSize="14" />
+                            <Button Text="more"
+                                    HorizontalOptions="End" />
+                        </StackLayout>
+                    </Frame>
+
+                    <Label Text="BorderColor (Material)" />
+                    <Frame Padding="16"
+                           BorderColor="{StaticResource PrimaryColor}">
+                        <StackLayout>
+                            <Image Source="{markupextensions:ImageResource XFVisual.Assets.card-background.png}"
+                                   Margin="-16,-16,-16,0"
+                                   Aspect="AspectFill" />
+                            <Label Text="Lorem Impsum"
+                                   FontSize="24"
+                                   TextColor="{StaticResource PrimaryTextColor}" />
+                            <Label Text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                                   TextColor="{StaticResource SecondaryTextColor}"
+                                   FontSize="14" />
+                            <Button Text="more"
+                                    HorizontalOptions="End" />
+                        </StackLayout>
+                    </Frame>
+
+                    <Label Text="BorderColor + No Shadow (Material)" />
+                    <Frame Padding="16"
+                           BorderColor="{StaticResource PrimaryColor}"
+                           HasShadow="False">
+                        <StackLayout>
+                            <Image Source="{markupextensions:ImageResource XFVisual.Assets.card-background.png}"
+                                   Margin="-16,-16,-16,0"
+                                   Aspect="AspectFill" />
+                            <Label Text="Lorem Impsum"
+                                   FontSize="24"
+                                   TextColor="{StaticResource PrimaryTextColor}" />
+                            <Label Text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                                   TextColor="{StaticResource SecondaryTextColor}"
+                                   FontSize="14" />
+                            <Button Text="more"
+                                    HorizontalOptions="End" />
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </ContentPage.Content>
+    </ContentPage>
+
+</TabbedPage>
