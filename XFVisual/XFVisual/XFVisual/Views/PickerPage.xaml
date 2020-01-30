@@ -1,108 +1,122 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
+            xmlns:markupextensions="clr-namespace:XFVisual.MarkupExtensions"
+            mc:Ignorable="d"
              Title="Pickers"
              x:Class="XFVisual.Views.PickerPage">
+
+    <ContentPage Title="Default"
+                 IconImageSource="{markupextensions:ImageResource XFVisual.Assets.default.png}">
+        <ContentPage.Content>
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Picker" />
+                    <Picker Title="Select an item">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Item 1</x:String>
+                                <x:String>Item 2</x:String>
+                                <x:String>Item 3</x:String>
+                                <x:String>Item 4</x:String>
+                                <x:String>Item 5</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <Label Text="Picker with Text- and TitleColor" />
+                    <Picker Title="Select an item"
+                            TextColor="{StaticResource PrimaryTextColor}"
+                            TitleColor="{StaticResource SecondaryTextColor}">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Item 1</x:String>
+                                <x:String>Item 2</x:String>
+                                <x:String>Item 3</x:String>
+                                <x:String>Item 4</x:String>
+                                <x:String>Item 5</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <Label Text="DatePicker" />
+                    <DatePicker MinimumDate="01/01/2020"
+                                MaximumDate="12/31/2020" />
+
+                    <Label Text="DatePicker with TextColor" />
+                    <DatePicker MinimumDate="01/01/2020"
+                                MaximumDate="12/31/2020"
+                                TextColor="{StaticResource PrimaryColor}" />
+
+                    <Label Text="TimePicker" />
+                    <TimePicker />
+
+                    <Label Text="TimePicker with TextColor" />
+                    <TimePicker TextColor="{StaticResource PrimaryColor}" />
+                </StackLayout>
+            </ScrollView>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="Material"
+                 IconImageSource="{markupextensions:ImageResource XFVisual.Assets.material.png}"
+                 Visual="Material">
+        <ContentPage.Content>
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Picker (Material)" />
+                    <Picker Title="Select an item"
+                            Visual="Material">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Item 1</x:String>
+                                <x:String>Item 2</x:String>
+                                <x:String>Item 3</x:String>
+                                <x:String>Item 4</x:String>
+                                <x:String>Item 5</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <Label Text="Picker with Text- and TitleColor (Material)" />
+                    <Picker Title="Select an item"
+                            TextColor="{StaticResource PrimaryTextColor}"
+                            TitleColor="{StaticResource SecondaryTextColor}"
+                            Visual="Material">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Item 1</x:String>
+                                <x:String>Item 2</x:String>
+                                <x:String>Item 3</x:String>
+                                <x:String>Item 4</x:String>
+                                <x:String>Item 5</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <Label Text="DatePicker (Material)" />
+                    <DatePicker MinimumDate="01/01/2020"
+                                MaximumDate="12/31/2020"
+                                Visual="Material" />
+
+                    <Label Text="DatePicker with TextColor (Material)" />
+                    <DatePicker MinimumDate="01/01/2020"
+                                MaximumDate="12/31/2020"
+                                TextColor="{StaticResource PrimaryColor}"
+                                Visual="Material" />
+
+                    <Label Text="TimePicker (Material)" />
+                    <TimePicker Visual="Material" />
+
+                    <Label Text="TimePicker with TextColor (Material)" />
+                    <TimePicker TextColor="{StaticResource PrimaryColor}"
+                                Visual="Material" />
+
+                </StackLayout>
+            </ScrollView>
+        </ContentPage.Content>
+    </ContentPage>
     
-    <ContentPage.Content>
-        <ScrollView>
-            <StackLayout>
-                <Label Text="Picker" />
-                <Picker Title="Select an item">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>Item 1</x:String>
-                            <x:String>Item 2</x:String>
-                            <x:String>Item 3</x:String>
-                            <x:String>Item 4</x:String>
-                            <x:String>Item 5</x:String>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
-
-                <Label Text="Picker (Material)" />
-                <Picker Title="Select an item"
-                        Visual="Material" >
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>Item 1</x:String>
-                            <x:String>Item 2</x:String>
-                            <x:String>Item 3</x:String>
-                            <x:String>Item 4</x:String>
-                            <x:String>Item 5</x:String>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
-
-                <Label Text="Picker with Text- and TitleColor" />
-                <Picker Title="Select an item"
-                        TextColor="{StaticResource PrimaryTextColor}"
-                        TitleColor="{StaticResource SecondaryTextColor}">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>Item 1</x:String>
-                            <x:String>Item 2</x:String>
-                            <x:String>Item 3</x:String>
-                            <x:String>Item 4</x:String>
-                            <x:String>Item 5</x:String>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
-
-                <Label Text="Picker with Text- and TitleColor (Material)" />
-                <Picker Title="Select an item"
-                        TextColor="{StaticResource PrimaryTextColor}"
-                        TitleColor="{StaticResource SecondaryTextColor}"
-                        Visual="Material">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>Item 1</x:String>
-                            <x:String>Item 2</x:String>
-                            <x:String>Item 3</x:String>
-                            <x:String>Item 4</x:String>
-                            <x:String>Item 5</x:String>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
-
-                <Label Text="DatePicker" />
-                <DatePicker MinimumDate="01/01/2019"
-                            MaximumDate="12/31/2019" />
-
-                <Label Text="DatePicker (Material)" />
-                <DatePicker MinimumDate="01/01/2019"
-                            MaximumDate="12/31/2019"
-                            Visual="Material" />
-
-                <Label Text="DatePicker with TextColor" />
-                <DatePicker MinimumDate="01/01/2019"
-                            MaximumDate="12/31/2019"
-                            TextColor="{StaticResource PrimaryColor}"/>
-
-                <Label Text="DatePicker with TextColor (Material)" />
-                <DatePicker MinimumDate="01/01/2019"
-                            MaximumDate="12/31/2019"
-                            TextColor="{StaticResource PrimaryColor}"
-                            Visual="Material" />
-
-                <Label Text="TimePicker" />
-                <TimePicker />
-
-                <Label Text="TimePicker (Material)" />
-                <TimePicker Visual="Material" />
-
-                <Label Text="TimePicker with TextColor" />
-                <TimePicker TextColor="{StaticResource PrimaryColor}" />
-
-                <Label Text="TimePicker with TextColor (Material)" />
-                <TimePicker TextColor="{StaticResource PrimaryColor}"
-                            Visual="Material" />
-
-            </StackLayout>
-        </ScrollView>
-    </ContentPage.Content>
-    
-</ContentPage>
+</TabbedPage>
