@@ -1,64 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             Title="ProgressBars"
-             x:Class="XFVisual.Views.ProgressBarPage">
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:markupextensions="clr-namespace:XFVisual.MarkupExtensions"
+            mc:Ignorable="d"
+            Title="ProgressBars"
+            x:Class="XFVisual.Views.ProgressBarPage">
 
-    <ContentPage.Content>
-        <ScrollView>
-            <StackLayout>
-                <Label Text="Animating" />
-                <ProgressBar Progress="{Binding PercentageCounter}" />
+    <ContentPage Title="Default"
+                 IconImageSource="{markupextensions:ImageResource XFVisual.Assets.default.png}">
+        <ContentPage.Content>
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Animating" />
+                    <ProgressBar Progress="{Binding PercentageCounter}" />
 
-                <Label Text="Animating (Material)" />
-                <ProgressBar Progress="{Binding PercentageCounter}"
-                             Visual="Material" />
+                    <Label Text="Animating with HeightRequest" />
+                    <ProgressBar HeightRequest="30"
+                                 Progress="{Binding PercentageCounter}" />
 
-                <Label Text="Animating with HeightRequest" />
-                <ProgressBar HeightRequest="30"
-                             Progress="{Binding PercentageCounter}" />
+                    <Label Text="0%" />
+                    <ProgressBar />
 
-                <Label Text="Animating with HeightRequest (Material)" />
-                <ProgressBar HeightRequest="30"
-                             Progress="{Binding PercentageCounter}"
-                             Visual="Material" />
+                    <Label Text="50%"
+                           Margin="0,0,0,-10" />
+                    <ProgressBar Progress="0.5" />
 
-                <Label Text="0%" />
-                <ProgressBar />
+                    <Label Text="ProgressColor" />
+                    <ProgressBar Progress="0.5"
+                                 ProgressColor="{StaticResource PrimaryColor}" />
 
-                <Label Text="0% (Material)" />
-                <ProgressBar Visual="Material" />
+                    <Label Text="BackgroundColor" />
+                    <ProgressBar Progress="0.5"
+                                 BackgroundColor="{StaticResource PrimaryColor}" />
+                </StackLayout>
+            </ScrollView>
+        </ContentPage.Content>
+    </ContentPage>
 
-                <Label Text="50%"
-                       Margin="0,0,0,-10" />
-                <ProgressBar Progress="0.5" />
+    <ContentPage Title="Material"
+                 IconImageSource="{markupextensions:ImageResource XFVisual.Assets.material.png}"
+                 Visual="Material">
+        <ContentPage.Content>
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Animating (Material)" />
+                    <ProgressBar Progress="{Binding PercentageCounter}"
+                                 Visual="Material" />
 
-                <Label Text="50% (Material)" />
-                <ProgressBar Progress="0.5"
-                             Visual="Material" />
+                    <Label Text="Animating with HeightRequest (Material)" />
+                    <ProgressBar HeightRequest="30"
+                                 Progress="{Binding PercentageCounter}"
+                                 Visual="Material" />
 
-                <Label Text="ProgressColor" />
-                <ProgressBar Progress="0.5"
-                             ProgressColor="{StaticResource PrimaryColor}" />
+                    <Label Text="0% (Material)" />
+                    <ProgressBar Visual="Material" />
 
-                <Label Text="ProgressColor (Material)" />
-                <ProgressBar Progress="0.5"
-                             ProgressColor="{StaticResource PrimaryColor}"
-                             Visual="Material" />
+                    <Label Text="50% (Material)" />
+                    <ProgressBar Progress="0.5"
+                                 Visual="Material" />
 
-                <Label Text="BackgroundColor" />
-                <ProgressBar Progress="0.5"
-                             BackgroundColor="{StaticResource PrimaryColor}" />
+                    <Label Text="ProgressColor (Material)" />
+                    <ProgressBar Progress="0.5"
+                                 ProgressColor="{StaticResource PrimaryColor}"
+                                 Visual="Material" />
 
-                <Label Text="BackgroundColor (Material)" />
-                <ProgressBar Progress="0.5"
-                             BackgroundColor="{StaticResource PrimaryColor}"
-                             Visual="Material" />
-            </StackLayout>
-        </ScrollView>
-    </ContentPage.Content>
+                    <Label Text="BackgroundColor (Material)" />
+                    <ProgressBar Progress="0.5"
+                                 BackgroundColor="{StaticResource PrimaryColor}"
+                                 Visual="Material" />
+                </StackLayout>
+            </ScrollView>
+        </ContentPage.Content>
+    </ContentPage>
 
-</ContentPage>
+</TabbedPage>

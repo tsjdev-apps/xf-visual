@@ -5,7 +5,7 @@ using Xamarin.Forms.Xaml;
 namespace XFVisual.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ProgressBarPage : ContentPage
+    public partial class ProgressBarPage : TabbedPage
     {
         private bool _isRunning = false;
 
